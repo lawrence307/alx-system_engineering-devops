@@ -1,4 +1,4 @@
- bad `phpp` extensions to `php` in the WordPress file `wp-settings.php`.
+# Fixes Apache 500 error
 
 exec { 'fix-wordpress':
   command => 'sed -i s/phpp/php/g /var/www/html/wp-settings.php',
